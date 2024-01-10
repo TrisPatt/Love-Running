@@ -5,7 +5,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 /* general styles */
@@ -14,12 +13,12 @@ body {
     display: flex;
     flex-direction: column;
     /* generic body styles */
-
-    font-family: lato, sans-serif;
+    color: #3a3a3a;
+    font-family:'lato', sans-serif;
 }
 
 h1 {
-    font-family: oswald, sans-serif;
+    font-family: 'oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -47,6 +46,8 @@ header a {
 main {
     background-color: lightblue;
     flex: 1 0 auto;
+    margin-top: 47px;
+    color: #252525
 }
 
 #menu {
@@ -81,7 +82,7 @@ nav {
 }
 
 #nav-toggle {
-    disply: none;
+    display: none;
 }
 
 .nav-toggle-label {
@@ -91,4 +92,24 @@ nav {
 
 footer {
     background-color: beige;
+}
+/* media query to accomodate different screen sizes */
+@media screen and (min-width: 768px) {
+    /* Header */
+nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+}
+#menu {
+    display: flex;
+    }
+#menu > li {
+    padding-left: 1rem;
+}
+.nav-toggle-label {
+    display: none;
+}
 }

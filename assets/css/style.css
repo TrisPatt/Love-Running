@@ -196,6 +196,14 @@ nav {
     color:#afafaf;
 }
 
+/* media query for landscape phones 576px and up*/
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* media query: tablets to accomodate different screen sizes */
 @media screen and (min-width: 768px) {
 
@@ -247,6 +255,9 @@ nav {
         text-align: end;
         align-self: flex-end;
     }
+    #photos {
+        column-count: 3;
+    }
 }
 
 /*large devices media query: laptops 992px and up */
@@ -254,7 +265,11 @@ nav {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+    #photos {
+        column-count: 4;
+    }
 }
+
 /* devices 1200px and above */
 @media screen and (min-width:1200px)  {
     #benefits {
@@ -275,5 +290,7 @@ nav {
     }
     #benefits-physical > div {
         align-self: flex-end;
+    }
+    
     }
 }
